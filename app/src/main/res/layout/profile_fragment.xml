@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/blood"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_profile"
+                android:textAlignment="center"
+                android:textColor="@color/grey_80"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_gender_round"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/gender_male_female_others"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_blood"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/blood_group_o_o"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_add_location"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/country_name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateContactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/contact_number"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_add_location"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/address_city"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/email_input"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUpdateEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/email_address"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/auth_register"
+                android:padding="15dp"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/update_profile"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/editID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

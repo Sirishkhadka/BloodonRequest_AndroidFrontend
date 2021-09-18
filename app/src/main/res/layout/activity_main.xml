@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/otptop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/background_kaleji" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/error"
+                android:textColor="@color/red_400"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/email_input"
+                android:drawableLeft="@drawable/ic_baseline_email"
+                android:drawablePadding="10dp"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/background_kaleji"
+                android:textColorHighlight="@color/background_kaleji"
+                android:textColorHint="@color/background_kaleji"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/email_input"
+                android:drawableLeft="@drawable/ic_baseline_password"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="#6F0303"
+                android:textColorHighlight="#6F0303"
+                android:textColorHint="#6F0303"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxLoginRemember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/background_kaleji"
+                    android:checked="true"
+                    android:text="Remember Me"
+                    android:textColor="@color/background_kaleji" />
+
+                <TextView
+                    android:id="@+id/tvLoginForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_password"
+                    android:drawablePadding="6dp"
+                    android:padding="4dp"
+                    android:text="Forget Password"
+                    android:textColor="@color/background_kaleji" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLoginLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/auth_register"
+                android:text="LOGIN"
+                android:textColor="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLoginRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/auth_login"
+                android:text="REGISTER" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

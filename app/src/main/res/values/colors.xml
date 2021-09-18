@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#7A0701</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightBlack">#160101</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_60">#666666</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_400">#EF5350</color>
+    <color name="auth_background">#B4B2B6</color>
+    <color name="auth_create_account">#7A0707</color>
+    <color name="background_kaleji">#7A0701</color>
+
+</resources>

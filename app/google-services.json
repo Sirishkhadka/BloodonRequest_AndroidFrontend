@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "552246267029",
+    "project_id": "bloodondemand-ec5a0",
+    "storage_bucket": "bloodondemand-ec5a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552246267029:android:7f1fe1ebe1a72880179f9c",
+        "android_client_info": {
+          "package_name": "com.example.bloodonrequest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552246267029-utivbjajil0t8obdgt6jke9hl5e9cplr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bloodonrequest",
+            "certificate_hash": "12a4ca124f1cbe9d6e5316615ad0d7702d1e6af9"
+          }
+        },
+        {
+          "client_id": "552246267029-dda812en83hnko1nbsmpjddtmd5h96gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJCYvKTCgal8-yiKXRcGMCIy2k_prO5To"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552246267029-dda812en83hnko1nbsmpjddtmd5h96gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

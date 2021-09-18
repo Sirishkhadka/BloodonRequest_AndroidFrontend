@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blood"
+                android:orientation="vertical" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewRequestBlood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestBloodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person"
+                    android:drawablePadding="50dp"
+                    android:hint="@string/full_name"
+
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_blood_donation"
+                    android:drawablePadding="50dp"
+                    android:hint="@string/blood_group_o_o_b_b_a_a_ab_ab"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestAmountBlood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_amount_blood"
+                    android:drawablePadding="30dp"
+                    android:hint="@string/amount_of_blood"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_phone"
+                    android:drawablePadding="50dp"
+                    android:hint="@string/contact_number"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_add_location"
+                    android:drawablePadding="50dp"
+                    android:hint="@string/location_details"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestNeededTillDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_date"
+                    android:drawablePadding="50dp"
+                    android:hint="@string/needed_till_date"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRequestWhyNeedBlood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_create"
+                    android:drawablePadding="50dp"
+                    android:hint="@string/why_do_you_need_blood"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/auth_register"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+                    android:text="@string/request"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

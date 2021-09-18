@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbars="horizontal"
+
+    android:background="@color/white"
+    tools:context=".AuthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/auth_top_background"
+        android:background="@drawable/auth_top_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/btnAuthRegister"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="@string/register"
+           android:textColor="@color/white"
+           android:textSize="20sp"
+           android:layout_marginHorizontal="25dp"
+           android:background="@drawable/auth_register"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAuthLogin"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="50dp"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/auth_login"/>
+    </LinearLayout>
+
+
+</LinearLayout>

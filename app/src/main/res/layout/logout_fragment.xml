@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.logout.LogoutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/auth_top_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="25sp"
+                android:background="@drawable/email_input"
+                android:gravity="center"
+                android:text="Blood On Demand"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="4dp"
+
+                app:cardElevation="2dp"
+                app:cardMaxElevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/logout_string"
+                    android:textColor="@color/black" />
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btnLogoutLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/auth_register"
+                android:text="@string/logout" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

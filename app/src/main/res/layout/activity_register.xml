@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_add_a_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/ic_baseline_add_a_photo"
+                android:scaleType="fitXY" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegisterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/email_input"
+                    android:drawableLeft="@drawable/ic_baseline_person"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rgRegisterGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterMale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/male"
+                        android:textColor="@color/grey_80"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterFemale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/female"
+                        android:textColor="@color/grey_80"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterOthers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/others"
+                        android:textColor="@color/grey_80"
+                        android:textSize="18dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rgBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterOP"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/blood_group"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/o"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterON"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/oN"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterAP"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/a"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterAN"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/an"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterBP"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/b"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterBN"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/bn"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterABP"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/ab"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbRegisterABN"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/abn"
+                        android:textColor="@color/background_kaleji"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/email_input"></Spinner>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegisterPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:drawableLeft="@drawable/ic_baseline_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/contact_number"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/actvRegisterAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:drawableLeft="@drawable/ic_baseline_add_location"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/address_city"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:drawableLeft="@drawable/ic_baseline_email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:drawableLeft="@drawable/ic_baseline_password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegisterConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/email_input"
+                    android:drawableLeft="@drawable/ic_baseline_password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#200101"
+                    android:textColorHighlight="#0C0000"
+                    android:textColorHint="#090000"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegisterRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/auth_register"
+                android:text="@string/register"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegisterLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/auth_login"
+                android:text="@string/login" />
+
+            <TextView
+                android:id="@+id/tvRegisterCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".OTPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/otptop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/phone_image"
+                    android:src="@drawable/number_verification" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_verify"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/please_enter_your_mobile_number_to_receive_a_verification_code"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_60" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/_977"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:textColor="@color/grey_80" />
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="0dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/_1234567890"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:textColor="@color/grey_80">
+
+                        <requestFocus />
+                    </com.google.android.material.textfield.TextInputEditText>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnOptVerify"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_red_btn"
+                    android:text="@string/verify"
+                    android:textColor="@color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarOTP"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

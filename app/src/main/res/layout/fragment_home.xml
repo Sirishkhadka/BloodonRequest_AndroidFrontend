@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/homeViewPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_kaleji"
+                android:gravity="center"
+                android:text="Blood On Demand"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/imageformat" />
+
+            <GridLayout
+                android:id="@+id/homeGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:rowCount="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/homeFirstCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="#DDD3D3"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/homeCardFirstImage"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/request_blood" />
+
+                        <TextView
+                            android:id="@+id/homeFirstTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/request_blood"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_80"
+                            android:textColorHighlight="@color/background_kaleji"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/homeSecondCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="#DDD3D3"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/homeSecondImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/donateblood" />
+
+                        <TextView
+                            android:id="@+id/homeSecondTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/blood_donations"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_80"
+                            android:textColorHighlight="@color/background_kaleji"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/homeFifthCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/homeFifthImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/hospital" />
+
+                        <TextView
+                            android:id="@+id/homeFifthTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/nav_my_hosptial"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_80"
+                            android:textColorHighlight="@color/background_kaleji"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/homeSixthCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/homeSixthImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/organization" />
+
+                        <TextView
+                            android:id="@+id/homeSixthTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/nav_blood_banks"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_80"
+                            android:textColorHighlight="@color/background_kaleji"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/homeThirdCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="#DDD3D3"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/homeThirdImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_person" />
+
+                        <TextView
+                            android:id="@+id/homeThirdTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/blood_banks"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_80"
+                            android:textColorHighlight="@color/background_kaleji"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/homeFourthCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/homeFourthImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_exit" />
+
+                        <TextView
+                            android:id="@+id/homeFourthTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/hospitals"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_80"
+                            android:textColorHighlight="@color/background_kaleji"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/table" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/footer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_kaleji"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/blood" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_on_request"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/version_1_0_0"
+                        android:textColor="@color/white"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/copyright_2021_sirish_jung_khadka"
+                        android:textColor="@color/white"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

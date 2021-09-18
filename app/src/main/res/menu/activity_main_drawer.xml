@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_blood_donation"
+            android:title="@string/menu_gallery" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_blood"
+            android:title="Blood Donations" />
+        <item
+            android:id="@+id/nav_hospital"
+            android:icon="@drawable/hospital"
+            android:title="@string/hospital" />
+
+        <item
+            android:id="@+id/nav_bloodBank"
+            android:icon="@drawable/organization"
+            android:title="@string/nav_blood_banks" />
+    </group>
+
+    <item android:title="User">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_baseline_person"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_baseline_exit_to_app"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>
